@@ -3,7 +3,7 @@
   color: #ffffff;
   text-align: center;
   padding: 20px;
-  position: fixed;
+  position: sticky;
   bottom: 0;
   width: 100%;
 }
