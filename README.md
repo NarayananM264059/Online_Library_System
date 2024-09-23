@@ -37,6 +37,9 @@ A React application for managing an online library, allowing users to browse, ad
    ```bash
    npm install
    ```
+   ```bash
+   npm install react-router-dom react-redux @reduxjs/toolkit react-icons formik yup
+   ```
 
 ## Running the Application
 
@@ -55,4 +58,4 @@ This project is licensed under the MIT License.
 
 ## Demo 
 
-Click Here : 
+Click Here : https://online-library-system-2c7o.onrender.com/
