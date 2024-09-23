@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useNavigate } from "react-router-dom";
 import "../styles/BookCard.css"; 
 
@@ -17,6 +18,12 @@ const BookCard = ({ id, title, image }) => {
       </div>
     </div>
   );
+};
+
+BookCard.propTypes = {
+  id: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 };
 
 export default BookCard;

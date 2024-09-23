@@ -1,91 +1,118 @@
-
 .add-book-container {
-    position: relative;
-    min-height: 82vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0;
-  }
-  
-  .add-book-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .add-book-form {
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 30px;
-    border-radius: 8px;
-    width: 90%;
-    max-width: 600px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .add-book-form h2 {
-    text-align: center;
-    margin-bottom: 25px;
-    color: #2c3e50;
-    font-size: 1.8em;
-  }
-  
-  .add-book-form label {
-    display: block;
-    margin-bottom: 5px;
-    color: #2c3e50;
-    font-weight: 500;
-  }
-  
-  .add-book-form input,
-  .add-book-form textarea,
-  .add-book-form select {
-    width: 100%;
+  min-height: 82vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.form-container {
+  position: relative;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 16px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.input {
+  padding: 8px;
+  border-radius: 4px;
+  margin-top: 4px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid #ccc;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.submit-button {
+  background-color: #4caf50;
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .form-container {
     padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #bdc3c7;
-    border-radius: 4px;
-    font-size: 1em;
-    background-color: #fff;
-    transition: border-color 0.3s ease;
   }
-  
-  .add-book-form input:focus,
-  .add-book-form textarea:focus,
-  .add-book-form select:focus {
-    border-color: #27ae60;
-    outline: none;
+
+  .title {
+    font-size: 20px;
   }
-  
-  .add-book-form button {
-    width: 100%;
-    padding: 12px;
-    background-color: #2980b9;
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1.1em;
-    transition: background-color 0.3s ease;
+
+  .label {
+    font-size: 14px;
   }
-  
-  .add-book-form button:hover {
-    background-color: #1f6391;
+
+  .input {
+    padding: 6px;
+    font-size: 14px;
   }
-  
-  @media (max-width: 768px) {
-    .add-book-form {
-      padding: 20px;
-    }
-  
-    .add-book-form h2 {
-      font-size: 1.5em;
-    }
+
+  .submit-button {
+    padding: 6px;
+    font-size: 14px;
   }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+
+  .input {
+    padding: 4px;
+    font-size: 12px;
+  }
+
+  .submit-button {
+    padding: 4px;
+    font-size: 12px;
+  }
+}

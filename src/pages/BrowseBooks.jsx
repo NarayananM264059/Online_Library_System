@@ -22,8 +22,13 @@ const BrowseBooks = () => {
   ];
 
   useEffect(() => {
+    console.log("Selected category:", category);
+    console.log("Books:", books);
+    
     if (category && category !== "All") {
-      setFilteredBooks(books.filter((book) => book.category === category));
+      const filtered = books.filter((book) => book.category === category);
+      setFilteredBooks(filtered);
+      console.log("Filtered books:", filtered);
     } else {
       setFilteredBooks(books);
     }
@@ -36,6 +41,8 @@ const BrowseBooks = () => {
   const displayedBooks = filteredBooks.filter((book) =>
     book.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  console.log("Displayed books after search:", displayedBooks);
 
   return (
     <div className="container">

@@ -2,7 +2,7 @@ export const books = [
     {      
       id: 1,
         title: "The Great Gatsby",
-        image: "https://upload.wikimedia.org/wikipedia/commons/f/f7/The_Great_Gatsby_%28cover%29.jpg",
+        image: "https://m.media-amazon.com/images/I/81QuEGw8VPL._SL1500_.jpg",
         description: "A novel about the American dream and the disillusionment of the 1920s.",
         author: "F. Scott Fitzgerald",
         releaseYear: "1925",
@@ -37,7 +37,7 @@ export const books = [
     {
         id: 4,
         title: "Sapiens: A Brief History of Humankind",
-        image: "https://images-na.ssl-images-amazon.com/images/I/71q3uGd1HGL.jpg",
+        image: "https://m.media-amazon.com/images/I/713jIoMO3UL._SL1500_.jpg",
         description: "An exploration of the history and impact of Homo sapiens.",
         author: "Yuval Noah Harari",
         releaseYear: "2011",
@@ -48,7 +48,7 @@ export const books = [
     {
         id: 5,
         title: "Educated",
-        image: "https://images-na.ssl-images-amazon.com/images/I/41mP0f6T5XL.jpg",
+        image: "https://m.media-amazon.com/images/I/51FeA1fnqtL._SL1100_.jpg",
         description: "A memoir about a woman's quest for knowledge and self-discovery.",
         author: "Tara Westover",
         releaseYear: "2018",
@@ -59,7 +59,7 @@ export const books = [
     {
         id: 6,
         title: "Becoming",
-        image: "https://images-na.ssl-images-amazon.com/images/I/51d0LszE0HL.jpg",
+        image: "https://m.media-amazon.com/images/I/81KGjsBXQ7L._SL1500_.jpg",
         description: "The memoir of Michelle Obama, detailing her life from childhood to the White House.",
         author: "Michelle Obama",
         releaseYear: "2018",
@@ -70,7 +70,7 @@ export const books = [
     {
         id: 7,
         title: "The Silent Patient",
-        image: "https://images-na.ssl-images-amazon.com/images/I/51L5xtwN3GL.jpg",
+        image: "https://m.media-amazon.com/images/I/81JJPDNlxSL._SL1500_.jpg",
         description: "A psychological thriller about a woman who stops speaking after committing a violent act.",
         author: "Alex Michaelides",
         releaseYear: "2019",
@@ -81,7 +81,7 @@ export const books = [
     {
         id: 8,
         title: "Where the Crawdads Sing",
-        image: "https://images-na.ssl-images-amazon.com/images/I/41DgkT9K8CL.jpg",
+        image: "https://m.media-amazon.com/images/I/81e+mSqZvnL._SL1500_.jpg",
         description: "A coming-of-age story intertwined with a murder mystery set in the marshes of North Carolina.",
         author: "Delia Owens",
         releaseYear: "2018",
@@ -92,7 +92,7 @@ export const books = [
     {
         id: 9,
         title: "The Midnight Library",
-        image: "https://images-na.ssl-images-amazon.com/images/I/41U8dqqHVaL.jpg",
+        image: "https://m.media-amazon.com/images/I/81J6APjwxlL._SL1500_.jpg",
         description: "A story about a library that allows one to explore alternate lives.",
         author: "Matt Haig",
         releaseYear: "2020",
@@ -103,7 +103,7 @@ export const books = [
     {
         id: 10,
         title: "Dune",
-        image: "https://images-na.ssl-images-amazon.com/images/I/51p%2B8kEqVTL.jpg",
+        image: "https://m.media-amazon.com/images/I/71-1WBgjGoL._SL1500_.jpg",
         description: "A science fiction epic about politics, religion, and ecology on a desert planet.",
         author: "Frank Herbert",
         releaseYear: "1965",

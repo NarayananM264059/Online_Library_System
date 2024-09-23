@@ -21,7 +21,7 @@ const HomePage = () => {
     "True-Crime",
   ];
 
-  const popularBooks = books.filter((book) => book.rating >= 4).slice(0, 5);
+  const popularBooks = books.filter((book) => book.rating >= 4).slice(0, 8);
 
   return (
     <div className="container">

@@ -21,18 +21,15 @@ const BookDetails = () => {
 
   return (
     <div className="container book-details">
-      <h1>{book.title}</h1>
-      <div className="details-content">
-        <img src={book.image} alt={book.title} />
+      <div className="details-box">
+        <h1>{book.title}</h1>
+        <img src={book.image} alt={book.title} className="book-image" />
         <div className="details-info">
           <p><strong>Author:</strong> {book.author}</p>
           <p><strong>Description:</strong> {book.description}</p>
-          <p><strong>Release Year:</strong> {book.releaseYear}</p>
           <p>
             <strong>Rating:</strong> <FaStar color="#f1c40f" /> {book.rating}
           </p>
-          <p><strong>Pages:</strong> {book.pages}</p>
-          <p><strong>Category:</strong> {book.category}</p>
           <Link to="/books" className="back-link">
             Back to Browse
           </Link>
