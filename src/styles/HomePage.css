@@ -1,0 +1,113 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #221d1d;
+  background-color: #eff2f8; /* Light background for contrast */
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #c51f10; 
+}
+h2 {
+  font-size: 2em;
+  margin: 30px 0 15px;
+  border-bottom: 2px solid #ff6f61;
+  padding-bottom: 10px;
+  color: #4A90E2;
+}
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.category-link {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  color: #333;
+  text-decoration: none;
+  padding: 15px 25px; 
+  margin: 5px;
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.category-link:hover {
+  background-color: #4A90E2; 
+  color: #141313; 
+  transform: scale(1.05); 
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.book-list > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff; 
+  border: 1px solid #1d1c1c;
+  border-radius: 8px; 
+  padding: 20px; 
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 10px rgba(71, 61, 61, 0.1); 
+}
+
+.book-list > div:hover {
+  transform: scale(1.03); 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
+}
+
+.book-list img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.book-list h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+  text-align: center;
+  color: #333; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em; 
+  }
+
+  .categories {
+    flex-direction: column; 
+  }
+
+  .category-link {
+    width: 100%; 
+    padding: 10px; 
+    font-size: 0.9em; 
+  }
+
+  .book-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+  }
+
+  .book-list > div {
+    padding: 15px; 
+  }
+
+  .book-list h3 {
+    font-size: 1em; 
+  }
+}
