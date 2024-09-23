@@ -5,15 +5,14 @@
   padding: 20px;
   font-family: Arial, sans-serif;
   color: #221d1d;
-  background-color: #eff2f8; /* Light background for contrast */
+  background-color: #eff2f8; 
 }
-
 /* Heading */
 .container h1 {
   text-align: center;
   font-size: 2.5em;
   margin-bottom: 20px;
-  color: #c51f10; /* Vibrant color for prominence */
+  color: #c51f10; 
 }
 
 /* Search Input */
@@ -24,14 +23,14 @@
   margin: 0 auto 30px auto;
   padding: 10px 15px;
   font-size: 1em;
-  border: 2px solid #4A90E2; /* Blue border */
+  border: 2px solid #4A90E2; 
   border-radius: 5px;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .search-input:focus {
-  border-color: #c51f10; /* Change border color on focus */
-  box-shadow: 0 0 5px rgba(197, 31, 16, 0.5); /* Subtle shadow on focus */
+  border-color: #c51f10; 
+  box-shadow: 0 0 5px rgba(197, 31, 16, 0.5);
   outline: none;
 }
 
@@ -44,7 +43,7 @@
 }
 
 .category-link {
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  background-color: rgba(255, 255, 255, 0.8); 
   color: #333;
   text-decoration: none;
   padding: 15px 25px;
@@ -56,13 +55,13 @@
 }
 
 .category-link:hover {
-  background-color: #4A90E2; /* Blue on hover */
-  color: #fff; /* White text on hover */
+  background-color: #4A90E2; 
+  color: #fff; 
   transform: scale(1.05);
 }
 
 .category-link.active {
-  background-color: #c51f10; /* Active category color */
+  background-color: #c51f10;
   color: #fff;
 }
 
@@ -78,7 +77,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ffffff; /* White background for cards */
+  background-color: #ffffff; 
   border: 1px solid #1d1c1c;
   border-radius: 8px;
   padding: 20px;
