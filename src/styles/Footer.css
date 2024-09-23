@@ -1,12 +1,15 @@
 .footer {
-  clear: both;
-  position: relative;
-  height: 200px;
-  margin-top: -200px;
+  height: 20px;
+  margin-bottom: 0px;
   background-color: #282c34;
   color: #ffffff;
   text-align: center;
   padding: 20px;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  z-index: 1000; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .footer p {
   margin: 0;
